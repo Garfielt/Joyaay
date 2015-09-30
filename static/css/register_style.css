@@ -1,0 +1,313 @@
+@charset "UTF-8";
+/**
+ * 
+ * @authors Vee (vee@lagou.com)
+ * @date    2014-08-18 14:44:03
+ * @version $1.0$
+*/
+html{
+	width: 100%;
+	height: 100%;
+}
+body{
+	width: 100%;
+	height: 100%;
+	margin:0;padding:0; font:normal 62.5% "黑体",Arial; 
+}
+body.radial{
+	background: -moz-linear-gradient(left 135deg, #029253, #00887b);
+	background: -webkit-gradient(linear, 100% 100%,0 0, from(#029253),to(#00887b));
+	background: -webkit-linear-gradient(135deg, #029253, #00887b);
+	background: -o-linear-gradient(135deg, #029253, #00887b);
+}
+input[type="submit"],
+input[type="reset"],
+input[type="button"],
+select,button {
+-webkit-appearance: none;
+border: none;
+outline: none;
+}
+.dn{
+	display: none;
+}
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+.new_wrapper{
+	width: 90%;
+	padding: 20px 0;
+	margin: 0 auto;
+}
+.top{
+	-moz-border-top-left-radius:5px !important;
+	-webkit-border-top-left-radius:5px !important;
+	border-top-left-radius: 5px !important;
+	-moz-border-top-right-radius:5px !important;
+	-webkit-border-top-right-radius:5px !important;
+	border-top-right-radius: 5px !important;
+}
+.btm{
+	-moz-border-bottom-left-radius:5px !important;
+	-webkit-border-bottom-left-radius:5px !important;
+	border-bottom-left-radius: 5px !important;
+	-moz-border-bottom-right-radius:5px !important;
+	-webkit-border-bottom-right-radius:5px !important;
+	border-bottom-right-radius: 5px !important;
+}
+.new_register{
+	position: relative;
+}
+.new_register span{
+	position: absolute;
+	right: 5%;
+	top: 19%;
+	padding-left: 17px;
+	font-size:1.2em;
+	color: #f94e4e;
+	line-height: 1.2;
+}
+.new_register span.err_email{
+	right: 5%;
+	top: 19%;
+}
+.new_register span.err_received_email{
+	right: 5%;
+	top: 70%;
+}
+.new_register span.err_psw{
+	right: 14%;
+	top: 70%;
+}
+.new_register span.err_phone{
+	right: 5%;
+	top: 19%;
+}
+.new_register span.err_name{
+	right: 5%;
+	top: 13%;
+}
+.new_register span.err_edu{
+	right: 11%;
+	top: 46%;
+}
+.new_register span.err_year{
+	right: 11%;
+	top: 79%;
+}
+.new_register span em{
+	width: 12px;
+	height: 12px;
+	position: absolute;
+	left: 0;
+	background: #f94e4e;
+	color: #ffffff;
+	font-style: normal;
+	-moz-border-radius:7px;
+	-webkit-border-radius:7px;
+	border-radius: 7px;
+	text-align: center;
+	font-size:1em;
+	line-height: 1.2;
+	padding: 1px;
+}
+.new_register input{
+	width: 90%;
+	border: none;
+	outline: none;
+	font: 1.6em "黑体";
+	color: #333;
+	background: #fff;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	border-radius: 0px;
+	padding: 6% 5%;
+	margin: 0;
+}
+.new_register .border_btm{
+	border-bottom: 1px solid #e0e0e0;
+}
+.new_register i.eye{
+	width: 20px;
+	height: 13px;
+	background: url(/static/images/psweye.png) 0 0 no-repeat;
+	background-size: 20px 30px;
+	position: absolute;
+	bottom: 18%;
+	right: 5%;
+	-moz-transition: transform 0.3s linear 0s;
+    -webkit-transition: transform 0.3s linear 0s;
+    -o-transition: transform 0.3s linear 0s;
+    transition: transform 0.3s linear 0s;
+}
+.new_register i.openeye{
+	background: url(/static/images/psweye.png) 0 -16px no-repeat;
+	background-size: 20px 30px;
+	-moz-transform: scale(1.1,1.1);
+	-webkit-transform: scale(1.1,1.1);
+	-o-transform: scale(1.1,1.1);
+	-ms-transform: scale(1.1,1.1);
+	transform: scale(1.1,1.1);  
+}
+.new_register select{
+	width: 99.9%;
+	border: none;
+	outline: none;
+	font: 1.6em "黑体";
+	color: #333;
+	-moz-border-radius:0px;
+	-webkit-border-radius:0px;
+	border-radius: 0px;
+	background: #fff;
+	padding: 6% 5%;
+	margin: 0;
+}
+.btn_green{
+	display: block;
+	width: 100%;
+	font-size: 2em;
+	color: #fff;
+	text-align: center;
+	background: #0ac599;
+	-webkit-box-shadow: 0px 2px 0px #008765;
+	-moz-box-shadow: 0px 2px 0px #008765;
+	box-shadow: 0px 2px 0px #008765;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius: 5px;
+	margin: 20px 0;
+	padding: 5% 5%;
+}
+a.btn_green.f22{
+	width: 90%;
+	font-size: 2.4em;
+	text-decoration: none;
+}
+.btn_green_border{
+	display: block;
+	width: 90%;
+	font-size: 2em;
+	color: #45e3be;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #45e3be;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius: 5px;
+	margin: 8px 0;
+	padding: 5% 5%;
+}
+.btn_green_border_s{
+	width: 48%;
+	font-size: 1.8em;
+	color: #45e3be;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #45e3be;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius: 5px;
+	margin: 0 0 10px 0;
+	padding: 5% 0%;
+}
+.register_text{
+	color: #45e3be;
+	font-size: 1.3em;
+	line-height:1.3;
+}
+.register_text a{
+	color: #9bffd3;
+}
+.new_wrapper h1{
+	color: #45e3be;
+	font:normal 1.8em "黑体"; 
+	margin: 0 0 15px 0;
+}
+.new_wrapper h1.font_big{
+	font-size: 3em;
+	color: #e1fff8;
+}
+option:first {
+    color: #d0d0d0;
+}
+.new_register i.arrow{
+	width: 13px;
+	height: 8px;
+	background: url(/static/images/select_arrow.png) 0 0 no-repeat;
+	background-size: 13px 8px;
+	position: absolute;
+	right: 5%;
+}
+.new_register i.arrow_edu{
+	top: 48%;
+}
+.new_register i.arrow_year{
+	top: 82%;
+}
+.active_text{
+	color: #45e3be;
+	font-size: 1.8em;
+	line-height: 1.6;
+	margin-bottom: 40px;
+}
+/*iphone4*/
+@media screen and (device-aspect-ratio: 2/3){
+	.active_text{
+		font-size: 1.6em;
+	}
+	.btn_green_border_s{
+		font-size: 1.6em;
+	}
+}
+/*iphone5*/
+@media screen and (device-aspect-ratio: 40/71){
+	.active_text{
+		font-size: 1.6em;
+	}
+	.btn_green_border_s{
+		font-size: 1.6em;
+	}
+}
+.active_text span{
+	word-wrap:break-word;
+}
+.email_notice{
+	color: #45e3be;
+	font-size:1.2em;
+	position:fixed;
+	bottom:20px;
+	left:5%;
+}
+#popLayer{
+	width: 58%;
+	color: #fff;
+	font-size: 1.8em;
+	line-height: 2;
+	position: absolute;
+	left: 16%;
+	top: 33%;
+	padding: 5%;
+	background: rgba(0,0,0,.9);
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius: 5px;
+	-moz-transform: scale(0,0);
+	-webkit-transform: scale(0,0);
+	-o-transform: scale(0,0);
+	-ms-transform: scale(0,0);
+	transform: scale(0,0);  
+	-moz-transition: transform 0.3s ease-in-out 0s;
+    -webkit-transition: transform 0.3s ease-in-out 0s;
+    -o-transition: transform 0.3s ease-in-out 0s;
+    transition: transform 0.3s ease-in-out 0s;
+}
+.pop{
+	-moz-transform: scale(1,1) !important;
+	-webkit-transform: scale(1,1) !important;
+	-o-transform: scale(1,1) !important;
+	-ms-transform: scale(1,1) !important;
+	transform: scale(1,1) !important;  
+}

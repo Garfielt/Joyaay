@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>智能体重身高测量秤</title>
+    <script type="text/javascript">
+    var ctx = "http://dstore.sinaapp.com";
+    var rctx = "http://dstore.sinaapp.com";
+    </script><link rel="stylesheet" href="{{ static_url('css/register_style.css') }}" />
+    <script type="text/javascript" src="{{ static_url('js/jquery-1.10.2.min.js') }}"></script>
+    <script type="text/javascript" src="{{ static_url('js/main.js') }}"></script>
+    </head>
+    <body class="radial">
+        <script type="text/javascript">
+        document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+            WeixinJSBridge.call('hideOptionMenu');
+        });
+        </script>
+        <div class="new_wrapper">
+            <form id="loginForm">
+
+                <div class="new_register">
+                    <input type="hidden" id="otype" value="1"/>
+                    <input type="text" placeholder="邮箱" class="border_btm r_email top" />
+                    <span class="err_email dn"><em>!</em>填写邮箱</span>
+
+                        <input type="password" placeholder="密码" class="r_psw btm" maxlength="16" />
+
+                    <span class="err_psw dn"><em>!</em>6~16位密码</span>
+
+                    <i class="eye"></i>
+
+                </div>
+                <input type="submit" class="btn_green" id="login" value="登录" />
+            </form>
+
+        </div>
+    
+</body>
+
+</html>
